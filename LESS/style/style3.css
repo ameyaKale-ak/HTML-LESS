@@ -1,0 +1,19 @@
+.class1 {
+  border: 2px dotted green;
+}
+/*Mixin*/
+.class2 {
+  border: 2px dotted green;
+  /*embedded class1 in class2*/
+  height: 100px;
+  width: 170px;
+  background-color: burlywood;
+}
+#id1 {
+  /*this parenthesis indicate we want to use this only in Less file*/
+  border-style: solid;
+  font-size: 30px;
+  color: green;
+  border-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
