@@ -1,0 +1,12 @@
+button {
+  font-size: 30px;
+  background-color: #235d23;
+  /*pre-defined function*/
+}
+p {
+  border: 2px solid black;
+  background-color: #c6c639;
+  color: rosybrown;
+  font-size: 100%;
+  /*pre-defined function*/
+}

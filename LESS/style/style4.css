@@ -1,0 +1,7 @@
+p {
+  /*condition for style*/
+  font-size: 41px;
+  color: yellowgreen;
+  /*the style will be applied basedon the value of the this size*/
+  border: 2px solid black;
+}

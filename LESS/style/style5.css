@@ -1,0 +1,15 @@
+main {
+  background-color: yellow;
+}
+main p {
+  color: rebeccapurple;
+  font-size: 20px;
+}
+main article {
+  background-color: royalblue;
+  border: 2px solid black;
+}
+main article p {
+  color: maroon;
+  font-size: 25px;
+}

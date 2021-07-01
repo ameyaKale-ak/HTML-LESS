@@ -1,0 +1,14 @@
+.p-style(@size) when (@size<=20){/*condition for styling*/
+    font-size: @size;
+    color: red;
+}
+
+.p-style(@size) when (@size>20){/*condition for style*/
+    font-size: @size;
+    color: yellowgreen
+    
+}
+p{
+    .p-style(41px);/*the style will be applied basedon the value of the this size*/
+    border: 2px solid black;
+}

@@ -1,0 +1,29 @@
+/*varibles*/
+header {
+  background-color: brown;
+}
+header p {
+  color: burlywood;
+  font-size: 19px;
+}
+main {
+  background-color: purple;
+}
+main p {
+  color: royalblue;
+  font-size: 15px;
+  /*using opertor for operation*/
+}
+main button {
+  background-color: grey;
+}
+main article {
+  background-color: hotpink;
+}
+main article p {
+  color: #ff3232;
+}
+footer {
+  background-color: saddlebrown;
+  font-size: 38px;
+}

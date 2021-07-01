@@ -1,0 +1,31 @@
+@base-size:19px; /*varibles*/
+@base-color :red;
+
+header{
+    background-color: brown;
+    p{
+        color: burlywood;
+        font-size: @base-size;
+    }
+}
+
+main{
+    background-color: purple;
+    p{
+        color: royalblue;
+        font-size: @base-size - 4;/*using opertor for operation*/
+    }
+    button{
+        background-color: grey;
+    }
+    article{
+        background-color: hotpink;
+        p{
+            color: @base-color + 50;
+        }
+    }
+}
+footer{
+    background-color: saddlebrown;
+    font-size: @base-size * 2;
+}
