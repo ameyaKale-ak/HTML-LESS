@@ -1,60 +1,183 @@
-/*styling for navbar*/
-nav{
-    background-color: rgb(13, 156, 156);
-    height: 60px;
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    left: 0px;
-    .navImg{
-        position: fixed;
-        left: 175px;
-        top:20px;      
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  /*styling for navbar*/
+  nav {
+      background-color: rgb(13, 156, 156);
+      height: 60px;
+      position: fixed;
+      top: 0px;
+      width: 100%;
+      left: 0px;
+
+      .navImg {
+          position: fixed;
+          left: 145px;
+          top: 5px;
+          height: 50px;
+      }
+
+      #category {
+          position: fixed;
+          left: 200px;
+          top: 20px;
+          color: blanchedalmond;
+          font-size: larger;
+      }
+
+      .searchBar {
+          position: fixed;
+          left: 315px;
+          top: 15px;
+          border-radius: 50px;
+          border: 2px solid white;
+          height: 30px;
+          width: 59%;
+          outline-style: none;
+          font-size: 16px;
+          padding-left: 15px;
+
+      }
+
+      #searchIcon {
+          position: fixed;
+          height: 35px;
+          top: 21px;
+          right: 325px;
+          color: rgb(13, 156, 156);
+      }
+
+      #signIn {
+          position: fixed;
+          right: 265px;
+          top: 20px;
+          color: blanchedalmond;
+          font-size: x-large;
+      }
+
+      #help {
+          position: fixed;
+          right: 230px;
+          top: 20px;
+          color: blanchedalmond;
+          font-size: x-large;
+      }
+
+      #cart {
+          position: fixed;
+          right: 195px;
+          top: 20px;
+          color: blanchedalmond;
+          font-size: x-large;
+      }
+  }
+
+  .main {
+      padding: 0px 144px;
+
+      .slideshow-container {
+
+          .slides {
+              img {
+                  position: relative;
+                  top: 60px;
+                  width: 100%;
+                  height: 388px;
+              }
+          }
+      }
+
+      .card {
+        box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 16.35%;
+        height: 388px;
+        border-color: wheat;
+        img {
+            height: 194px;
+        }
+        .productName{
+            font-size: medium;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+        .productDescription{
+          font-size: medium;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          color: desaturate(grey,90%);
+        }
+        .discount{
+            word-spacing: 5px;
+            color: red;
+            font-size: medium;
+          .newPrice{
+              padding-left: 25px;
+              color: green;
+              font-size: large;   
+          }
+        }
+        .oldPrice{
+          font-size: medium;
+          color: desaturate(rgb(85, 84, 84),50%);
+          padding-left: 10px;
+        }
+        button{
+          background-color: rgb(230, 78, 129);
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-size: medium;
+          border-radius: 15px 3px;
+          outline-style: none;
+          word-spacing: 2px;
+          position: relative;
+          left: 56%;
+          color: white;
+        }
     }
-    .category{
-        position: fixed;
-        left: 215px;
-        top:20px;
-    }
-    .searchBar{
-        position:fixed;
-        left: 300px; 
-        top: 12px;
-        border-radius: 50px;
-        border: 2px solid white;
-        height: 30px;
-        width: 59%;
-        outline-style: none;
-        font-size: 16px;
-        padding-left: 15px;
-    }
-    .btnIcon{
-        position: fixed;
-        height: 35px;
-        top:12px;
-        right: 315px;
-        background: none;
-        border-radius: 50px;
-        border: 2px solid white;
-    }
-    .signIn{
-        position: fixed;
-        right: 275px;
-        top:20px;
-    }
-    .help{
-        position: fixed;
-        right: 235px;
-        top:20px;
-    }
-    .cart{
-        position: fixed;
-        right: 195px;
-        top:20px;
-    }
-}
-/*for text*/
-h2{
-    position: relative;
-    left: 135px;
-}
+
+      .cardGrid {
+
+              .card1{
+                  .card;
+                  display: inline-block;
+              }
+              
+              .card2{
+                  .card;
+                  display: inline-block;
+              }
+              .card3{
+                  .card;
+                  display: inline-block;
+              }
+              .card4{
+                  .card;
+                  display: inline-block;
+              }
+              .card5{
+                  .card;
+                  display: inline-block;
+              }
+              .card6{
+                  .card;
+                  display: inline-block;
+              }
+      }
+
+      .topDeals{
+          .cardGrid;
+      }
+      .mustHave{
+          .cardGrid;
+      }
+      .bestAccessories{
+          .cardGrid;
+      }
+      
+      .beforeMusthave{
+          #lastImg{
+          float: left;
+          }
+      }
+  }

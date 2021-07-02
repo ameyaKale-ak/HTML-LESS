@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*styling for navbar*/
 nav {
   background-color: #0d9c9c;
@@ -9,18 +14,21 @@ nav {
 }
 nav .navImg {
   position: fixed;
-  left: 175px;
-  top: 20px;
+  left: 145px;
+  top: 5px;
+  height: 50px;
 }
-nav .category {
+nav #category {
   position: fixed;
-  left: 215px;
+  left: 200px;
   top: 20px;
+  color: blanchedalmond;
+  font-size: larger;
 }
 nav .searchBar {
   position: fixed;
-  left: 300px;
-  top: 12px;
+  left: 315px;
+  top: 15px;
   border-radius: 50px;
   border: 2px solid white;
   height: 30px;
@@ -29,32 +37,1192 @@ nav .searchBar {
   font-size: 16px;
   padding-left: 15px;
 }
-nav .btnIcon {
+nav #searchIcon {
   position: fixed;
   height: 35px;
-  top: 12px;
-  right: 315px;
-  background: none;
-  border-radius: 50px;
-  border: 2px solid white;
+  top: 21px;
+  right: 325px;
+  color: #0d9c9c;
 }
-nav .signIn {
+nav #signIn {
   position: fixed;
-  right: 275px;
+  right: 265px;
   top: 20px;
+  color: blanchedalmond;
+  font-size: x-large;
 }
-nav .help {
+nav #help {
   position: fixed;
-  right: 235px;
+  right: 230px;
   top: 20px;
+  color: blanchedalmond;
+  font-size: x-large;
 }
-nav .cart {
+nav #cart {
   position: fixed;
   right: 195px;
   top: 20px;
+  color: blanchedalmond;
+  font-size: x-large;
 }
-/*for text*/
-h2 {
+.main {
+  padding: 0px 144px;
+}
+.main .slideshow-container .slides img {
   position: relative;
-  left: 135px;
+  top: 60px;
+  width: 100%;
+  height: 388px;
+}
+.main .card {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+}
+.main .card img {
+  height: 194px;
+}
+.main .card .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .card .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .card .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .card .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .card .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .card button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card1 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card1 img {
+  height: 194px;
+}
+.main .cardGrid .card1 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card1 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card1 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card1 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card1 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card1 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card2 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card2 img {
+  height: 194px;
+}
+.main .cardGrid .card2 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card2 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card2 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card2 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card2 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card2 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card3 img {
+  height: 194px;
+}
+.main .cardGrid .card3 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card3 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card3 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card3 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card3 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card3 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card4 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card4 img {
+  height: 194px;
+}
+.main .cardGrid .card4 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card4 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card4 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card4 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card4 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card4 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card5 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card5 img {
+  height: 194px;
+}
+.main .cardGrid .card5 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card5 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card5 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card5 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card5 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card5 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .cardGrid .card6 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .cardGrid .card6 img {
+  height: 194px;
+}
+.main .cardGrid .card6 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .cardGrid .card6 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .cardGrid .card6 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .cardGrid .card6 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .cardGrid .card6 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .cardGrid .card6 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card1 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card1 img {
+  height: 194px;
+}
+.main .topDeals .card1 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card1 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card1 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card1 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card1 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card1 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card2 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card2 img {
+  height: 194px;
+}
+.main .topDeals .card2 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card2 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card2 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card2 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card2 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card2 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card3 img {
+  height: 194px;
+}
+.main .topDeals .card3 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card3 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card3 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card3 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card3 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card3 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card4 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card4 img {
+  height: 194px;
+}
+.main .topDeals .card4 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card4 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card4 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card4 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card4 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card4 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card5 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card5 img {
+  height: 194px;
+}
+.main .topDeals .card5 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card5 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card5 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card5 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card5 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card5 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .topDeals .card6 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .topDeals .card6 img {
+  height: 194px;
+}
+.main .topDeals .card6 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .topDeals .card6 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .topDeals .card6 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .topDeals .card6 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .topDeals .card6 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .topDeals .card6 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card1 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card1 img {
+  height: 194px;
+}
+.main .mustHave .card1 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card1 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card1 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card1 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card1 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card1 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card2 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card2 img {
+  height: 194px;
+}
+.main .mustHave .card2 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card2 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card2 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card2 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card2 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card2 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card3 img {
+  height: 194px;
+}
+.main .mustHave .card3 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card3 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card3 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card3 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card3 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card3 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card4 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card4 img {
+  height: 194px;
+}
+.main .mustHave .card4 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card4 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card4 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card4 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card4 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card4 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card5 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card5 img {
+  height: 194px;
+}
+.main .mustHave .card5 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card5 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card5 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card5 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card5 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card5 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .mustHave .card6 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .mustHave .card6 img {
+  height: 194px;
+}
+.main .mustHave .card6 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .mustHave .card6 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .mustHave .card6 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .mustHave .card6 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .mustHave .card6 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .mustHave .card6 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card1 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card1 img {
+  height: 194px;
+}
+.main .bestAccessories .card1 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card1 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card1 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card1 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card1 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card1 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card2 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card2 img {
+  height: 194px;
+}
+.main .bestAccessories .card2 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card2 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card2 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card2 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card2 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card2 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card3 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card3 img {
+  height: 194px;
+}
+.main .bestAccessories .card3 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card3 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card3 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card3 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card3 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card3 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card4 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card4 img {
+  height: 194px;
+}
+.main .bestAccessories .card4 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card4 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card4 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card4 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card4 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card4 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card5 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card5 img {
+  height: 194px;
+}
+.main .bestAccessories .card5 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card5 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card5 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card5 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card5 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card5 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .bestAccessories .card6 {
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 16.35%;
+  height: 388px;
+  border-color: wheat;
+  display: inline-block;
+}
+.main .bestAccessories .card6 img {
+  height: 194px;
+}
+.main .bestAccessories .card6 .productName {
+  font-size: medium;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+.main .bestAccessories .card6 .productDescription {
+  font-size: medium;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: #808080;
+}
+.main .bestAccessories .card6 .discount {
+  word-spacing: 5px;
+  color: red;
+  font-size: medium;
+}
+.main .bestAccessories .card6 .discount .newPrice {
+  padding-left: 25px;
+  color: green;
+  font-size: large;
+}
+.main .bestAccessories .card6 .oldPrice {
+  font-size: medium;
+  color: #555555;
+  padding-left: 10px;
+}
+.main .bestAccessories .card6 button {
+  background-color: #e64e81;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: medium;
+  border-radius: 15px 3px;
+  outline-style: none;
+  word-spacing: 2px;
+  position: relative;
+  left: 56%;
+  color: white;
+}
+.main .beforeMusthave #lastImg {
+  float: left;
 }
