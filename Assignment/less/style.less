@@ -1,3 +1,7 @@
+  @import "slideshow";
+  @import "footer";
+  @import "navbar";
+  
   * {
       margin: 0;
       padding: 0;
@@ -5,91 +9,10 @@
   }
 
   /*styling for navbar*/
-  nav {
-      background-color: rgb(13, 156, 156);
-      height: 60px;
-      position: fixed;
-      top: 0px;
-      width: 100%;
-      left: 0px;
-
-      .navImg {
-          position: fixed;
-          left: 145px;
-          top: 5px;
-          height: 50px;
-      }
-
-      #category {
-          position: fixed;
-          left: 200px;
-          top: 20px;
-          color: blanchedalmond;
-          font-size: larger;
-      }
-
-      .searchBar {
-          position: fixed;
-          left: 315px;
-          top: 15px;
-          border-radius: 50px;
-          border: 2px solid white;
-          height: 30px;
-          width: 59%;
-          outline-style: none;
-          font-size: 16px;
-          padding-left: 15px;
-
-      }
-
-      #searchIcon {
-          position: fixed;
-          height: 35px;
-          top: 21px;
-          right: 325px;
-          color: rgb(13, 156, 156);
-      }
-
-      #signIn {
-          position: fixed;
-          right: 265px;
-          top: 20px;
-          color: blanchedalmond;
-          font-size: x-large;
-      }
-
-      #help {
-          position: fixed;
-          right: 230px;
-          top: 20px;
-          color: blanchedalmond;
-          font-size: x-large;
-      }
-
-      #cart {
-          position: fixed;
-          right: 195px;
-          top: 20px;
-          color: blanchedalmond;
-          font-size: x-large;
-      }
-  }
+  
 
   .main {
-      padding: 0px 144px;
-
-      .slideshow-container {
-
-          .slides {
-              img {
-                  position: relative;
-                  top: 60px;
-                  width: 100%;
-                  height: 388px;
-              }
-          }
-      }
-
+    padding: 0px 144px;;
       .card {
         box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
         width: 16.35%;
@@ -100,12 +23,12 @@
         }
         .productName{
             font-size: medium;
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Roboto", "Helvetica", sans-serif;
             font-weight: bold;
         }
         .productDescription{
           font-size: medium;
-          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+          font-family: "Roboto", "Helvetica",'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
           color: desaturate(grey,90%);
         }
         .discount{
@@ -125,14 +48,16 @@
         }
         button{
           background-color: rgb(230, 78, 129);
-          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+          font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
           font-size: medium;
-          border-radius: 15px 3px;
+          border-radius: 25px 0px 3px 0px;
           outline-style: none;
           word-spacing: 2px;
           position: relative;
-          left: 56%;
+          left: 52%;
+          bottom: 15px;
           color: white;
+          padding: 5px;
         }
     }
 
@@ -177,7 +102,19 @@
       
       .beforeMusthave{
           #lastImg{
+        padding:0.5px;
           float: left;
+          }
+      }
+
+
+  }
+
+  @media screen and (max-width:768px){
+      nav{
+          .searchBar{
+              width: 30%;
+              left:100px;
           }
       }
   }

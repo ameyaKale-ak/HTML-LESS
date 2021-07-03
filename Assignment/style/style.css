@@ -1,9 +1,76 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.mySlides {
+  display: none;
 }
-/*styling for navbar*/
+.mySlides img {
+  vertical-align: middle;
+  height: 388px;
+  width: 100%;
+  margin-top: 50px;
+  cursor: pointer;
+}
+/* slideshow container */
+.slideshow-container {
+  max-width: 1200px;
+  position: relative;
+  margin: auto;
+}
+/*for dots*/
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+.active {
+  background-color: #717171;
+}
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+footer {
+  background-color: gray;
+  display: flex ;
+  flex: 1;
+}
+footer .whyShop .reason1 {
+  display: flex;
+  align-items: center;
+}
+footer .whyShop .reason1 img {
+  height: 50px;
+  width: 50px;
+}
+footer .whyShop .reason2 {
+  display: flex;
+  align-items: center;
+}
+footer .whyShop .reason2 img {
+  height: 50px;
+  width: 50px;
+}
+footer .whyShop .reason3 {
+  display: flex;
+  align-items: center;
+}
+footer .whyShop .reason3 img {
+  height: 50px;
+  width: 50px;
+}
 nav {
   background-color: #0d9c9c;
   height: 60px;
@@ -11,6 +78,7 @@ nav {
   top: 0px;
   width: 100%;
   left: 0px;
+  z-index: 100;
 }
 nav .navImg {
   position: fixed;
@@ -26,7 +94,7 @@ nav #category {
   font-size: larger;
 }
 nav .searchBar {
-  position: fixed;
+  position: relative;
   left: 315px;
   top: 15px;
   border-radius: 50px;
@@ -65,14 +133,14 @@ nav #cart {
   color: blanchedalmond;
   font-size: x-large;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*styling for navbar*/
 .main {
   padding: 0px 144px;
-}
-.main .slideshow-container .slides img {
-  position: relative;
-  top: 60px;
-  width: 100%;
-  height: 388px;
 }
 .main .card {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -85,12 +153,12 @@ nav #cart {
 }
 .main .card .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .card .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .card .discount {
@@ -110,14 +178,16 @@ nav #cart {
 }
 .main .card button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card1 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -131,12 +201,12 @@ nav #cart {
 }
 .main .cardGrid .card1 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card1 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card1 .discount {
@@ -156,14 +226,16 @@ nav #cart {
 }
 .main .cardGrid .card1 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card2 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -177,12 +249,12 @@ nav #cart {
 }
 .main .cardGrid .card2 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card2 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card2 .discount {
@@ -202,14 +274,16 @@ nav #cart {
 }
 .main .cardGrid .card2 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -223,12 +297,12 @@ nav #cart {
 }
 .main .cardGrid .card3 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card3 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card3 .discount {
@@ -248,14 +322,16 @@ nav #cart {
 }
 .main .cardGrid .card3 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card4 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -269,12 +345,12 @@ nav #cart {
 }
 .main .cardGrid .card4 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card4 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card4 .discount {
@@ -294,14 +370,16 @@ nav #cart {
 }
 .main .cardGrid .card4 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card5 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -315,12 +393,12 @@ nav #cart {
 }
 .main .cardGrid .card5 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card5 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card5 .discount {
@@ -340,14 +418,16 @@ nav #cart {
 }
 .main .cardGrid .card5 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .cardGrid .card6 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -361,12 +441,12 @@ nav #cart {
 }
 .main .cardGrid .card6 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .cardGrid .card6 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .cardGrid .card6 .discount {
@@ -386,14 +466,16 @@ nav #cart {
 }
 .main .cardGrid .card6 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card1 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -407,12 +489,12 @@ nav #cart {
 }
 .main .topDeals .card1 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card1 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card1 .discount {
@@ -432,14 +514,16 @@ nav #cart {
 }
 .main .topDeals .card1 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card2 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -453,12 +537,12 @@ nav #cart {
 }
 .main .topDeals .card2 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card2 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card2 .discount {
@@ -478,14 +562,16 @@ nav #cart {
 }
 .main .topDeals .card2 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -499,12 +585,12 @@ nav #cart {
 }
 .main .topDeals .card3 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card3 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card3 .discount {
@@ -524,14 +610,16 @@ nav #cart {
 }
 .main .topDeals .card3 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card4 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -545,12 +633,12 @@ nav #cart {
 }
 .main .topDeals .card4 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card4 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card4 .discount {
@@ -570,14 +658,16 @@ nav #cart {
 }
 .main .topDeals .card4 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card5 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -591,12 +681,12 @@ nav #cart {
 }
 .main .topDeals .card5 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card5 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card5 .discount {
@@ -616,14 +706,16 @@ nav #cart {
 }
 .main .topDeals .card5 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .topDeals .card6 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -637,12 +729,12 @@ nav #cart {
 }
 .main .topDeals .card6 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .topDeals .card6 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .topDeals .card6 .discount {
@@ -662,14 +754,16 @@ nav #cart {
 }
 .main .topDeals .card6 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card1 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -683,12 +777,12 @@ nav #cart {
 }
 .main .mustHave .card1 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card1 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card1 .discount {
@@ -708,14 +802,16 @@ nav #cart {
 }
 .main .mustHave .card1 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card2 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -729,12 +825,12 @@ nav #cart {
 }
 .main .mustHave .card2 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card2 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card2 .discount {
@@ -754,14 +850,16 @@ nav #cart {
 }
 .main .mustHave .card2 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -775,12 +873,12 @@ nav #cart {
 }
 .main .mustHave .card3 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card3 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card3 .discount {
@@ -800,14 +898,16 @@ nav #cart {
 }
 .main .mustHave .card3 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card4 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -821,12 +921,12 @@ nav #cart {
 }
 .main .mustHave .card4 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card4 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card4 .discount {
@@ -846,14 +946,16 @@ nav #cart {
 }
 .main .mustHave .card4 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card5 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -867,12 +969,12 @@ nav #cart {
 }
 .main .mustHave .card5 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card5 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card5 .discount {
@@ -892,14 +994,16 @@ nav #cart {
 }
 .main .mustHave .card5 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .mustHave .card6 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -913,12 +1017,12 @@ nav #cart {
 }
 .main .mustHave .card6 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .mustHave .card6 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .mustHave .card6 .discount {
@@ -938,14 +1042,16 @@ nav #cart {
 }
 .main .mustHave .card6 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card1 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -959,12 +1065,12 @@ nav #cart {
 }
 .main .bestAccessories .card1 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card1 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card1 .discount {
@@ -984,14 +1090,16 @@ nav #cart {
 }
 .main .bestAccessories .card1 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card2 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1005,12 +1113,12 @@ nav #cart {
 }
 .main .bestAccessories .card2 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card2 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card2 .discount {
@@ -1030,14 +1138,16 @@ nav #cart {
 }
 .main .bestAccessories .card2 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card3 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1051,12 +1161,12 @@ nav #cart {
 }
 .main .bestAccessories .card3 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card3 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card3 .discount {
@@ -1076,14 +1186,16 @@ nav #cart {
 }
 .main .bestAccessories .card3 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card4 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1097,12 +1209,12 @@ nav #cart {
 }
 .main .bestAccessories .card4 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card4 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card4 .discount {
@@ -1122,14 +1234,16 @@ nav #cart {
 }
 .main .bestAccessories .card4 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card5 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1143,12 +1257,12 @@ nav #cart {
 }
 .main .bestAccessories .card5 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card5 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card5 .discount {
@@ -1168,14 +1282,16 @@ nav #cart {
 }
 .main .bestAccessories .card5 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .bestAccessories .card6 {
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
@@ -1189,12 +1305,12 @@ nav #cart {
 }
 .main .bestAccessories .card6 .productName {
   font-size: medium;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Roboto", "Helvetica", sans-serif;
   font-weight: bold;
 }
 .main .bestAccessories .card6 .productDescription {
   font-size: medium;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Roboto", "Helvetica", 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: #808080;
 }
 .main .bestAccessories .card6 .discount {
@@ -1214,15 +1330,24 @@ nav #cart {
 }
 .main .bestAccessories .card6 button {
   background-color: #e64e81;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: "Roboto", "Helvetica", Georgia, Times, 'Times New Roman', serif;
   font-size: medium;
-  border-radius: 15px 3px;
+  border-radius: 25px 0px 3px 0px;
   outline-style: none;
   word-spacing: 2px;
   position: relative;
-  left: 56%;
+  left: 52%;
+  bottom: 15px;
   color: white;
+  padding: 5px;
 }
 .main .beforeMusthave #lastImg {
+  padding: 0.5px;
   float: left;
+}
+@media screen and (max-width: 768px) {
+  nav .searchBar {
+    width: 30%;
+    left: 100px;
+  }
 }
